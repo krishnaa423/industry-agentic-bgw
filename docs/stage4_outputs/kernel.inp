@@ -1,0 +1,5 @@
+screening_semiconductor
+number_val_bands 3
+number_cond_bands 7
+use_wfn_hdf5
+verbosity 1

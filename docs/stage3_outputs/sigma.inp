@@ -1,0 +1,7 @@
+screening_semiconductor
+number_bands 200
+frequency_dependence 0
+bare_coulomb_cutoff 10.0
+screened_coulomb_cutoff 10.0
+eqp_corrections
+verbosity 1

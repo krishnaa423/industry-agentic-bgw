@@ -1,0 +1,6 @@
+epsilon_cutoff 10.0
+number_bands 200
+frequency_dependence 0
+screening_semiconductor
+use_wfn_hdf5
+verbosity 1

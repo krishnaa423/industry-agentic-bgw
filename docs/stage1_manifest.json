@@ -1,0 +1,101 @@
+[
+  {
+    "name": "bgw_epsilon_keywords",
+    "kind": "manual",
+    "url": "http://manual.berkeleygw.org/4.0/epsilon-keywords/",
+    "final_url": "http://manual.berkeleygw.org/4.0/epsilon-keywords/",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/bgw_epsilon_keywords.txt",
+    "char_count": 28303,
+    "line_count": 1826,
+    "error": null
+  },
+  {
+    "name": "bgw_sigma_keywords",
+    "kind": "manual",
+    "url": "http://manual.berkeleygw.org/4.0/sigma-keywords/",
+    "final_url": "http://manual.berkeleygw.org/4.0/sigma-keywords/",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/bgw_sigma_keywords.txt",
+    "char_count": 35912,
+    "line_count": 2264,
+    "error": null
+  },
+  {
+    "name": "bgw_kernel_keywords",
+    "kind": "manual",
+    "url": "http://manual.berkeleygw.org/4.0/kernel-keywords/",
+    "final_url": "http://manual.berkeleygw.org/4.0/kernel-keywords/",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/bgw_kernel_keywords.txt",
+    "char_count": 14627,
+    "line_count": 1162,
+    "error": null
+  },
+  {
+    "name": "bgw_absorption_keywords",
+    "kind": "manual",
+    "url": "http://manual.berkeleygw.org/4.0/absorption-keywords/",
+    "final_url": "http://manual.berkeleygw.org/4.0/absorption-keywords/",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/bgw_absorption_keywords.txt",
+    "char_count": 37368,
+    "line_count": 2571,
+    "error": null
+  },
+  {
+    "name": "qe_input_pw",
+    "kind": "manual",
+    "url": "https://www.quantum-espresso.org/Doc/INPUT_PW.html",
+    "final_url": "https://www.quantum-espresso.org/Doc/INPUT_PW.html",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/qe_input_pw.txt",
+    "char_count": 129585,
+    "line_count": 10612,
+    "error": null
+  },
+  {
+    "name": "qe_input_ph",
+    "kind": "manual",
+    "url": "https://www.quantum-espresso.org/Doc/INPUT_PH.html",
+    "final_url": "https://www.quantum-espresso.org/Doc/INPUT_PH.html",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/qe_input_ph.txt",
+    "char_count": 25644,
+    "line_count": 2075,
+    "error": null
+  },
+  {
+    "name": "epw_inputs",
+    "kind": "manual",
+    "url": "https://docs.epw-code.org/Inputs/Inputs.html",
+    "final_url": "https://docs.epw-code.org/Inputs/Inputs.html",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/epw_inputs.txt",
+    "char_count": 59369,
+    "line_count": 5991,
+    "error": null
+  },
+  {
+    "name": "paper_lif_excitonic_polarons_arxiv_abs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2401.09369",
+    "final_url": "https://arxiv.org/abs/2401.09369",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/paper_lif_excitonic_polarons_arxiv_abs.txt",
+    "char_count": 5544,
+    "line_count": 398,
+    "error": null
+  },
+  {
+    "name": "paper_lif_excitonic_polarons_arxiv_html",
+    "kind": "paper",
+    "url": "https://arxiv.org/html/2401.09369v1",
+    "final_url": "https://arxiv.org/html/2401.09369v1",
+    "status_code": 200,
+    "output_file": "/Users/krishnaa/Documents/programming/python/industry/cs/agentic_bgw/docs/sources/paper_lif_excitonic_polarons_arxiv_html.txt",
+    "char_count": 321005,
+    "line_count": 19399,
+    "error": null
+  }
+]

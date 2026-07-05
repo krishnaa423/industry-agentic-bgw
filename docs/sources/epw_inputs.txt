@@ -1,0 +1,5991 @@
+EPW
+ 
+ | Inputs for EPW
+ 
+ 
+
+|||
+
+Quick search
+
+Project
+
+About
+
+Releases
+
+Documentation
+
+Inputs for EPW
+
+Inputs for ZG
+
+Theory
+
+Tutorials
+
+Schools
+
+Acknowledgements
+
+Papers using EPW
+
+Contact
+
+Source code
+
+Download and Install
+
+Code coverage
+
+Accuracy
+
+GitLab
+
+Test Farm
+
+Developers
+
+Benchmarks
+
+Developers
+
+Developers meetings
+
+Steering committee meetings
+
+Website maintenance
+
+Inputs for EPW
+¶
+
+List of inputs of EPW v6.0
+¶
+
+Structure of the input data
+¶
+
+title line
+
+&inputepw
+…
+
+/
+…
+
+&inputepw
+¶
+
+A
+ 
+a2f
+, 
+a2f_iso
+, 
+adapt_ethrdg_plrn
+, 
+ahc_nbnd
+, 
+ahc_nbndskip
+, 
+ahc_win_max
+, 
+ahc_win_min
+, 
+amass
+, 
+asr_typ
+, 
+assume_metal
+, 
+a_gap0
+
+B
+ 
+band_plot
+, 
+bands_skipped
+, 
+bfieldx, bfieldy, bfieldz
+, 
+bnd_cum
+, 
+broyden_beta
+, 
+broyden_ndim
+
+C
+ 
+cal_psir_plrn
+, 
+carrier
+, 
+calc_nelec_wann
+, 
+conv_thr_iaxis
+, 
+conv_thr_plrn
+, 
+conv_thr_racon
+, 
+conv_thr_raxis
+, 
+cumulant
+
+D
+ 
+degaussq
+, 
+degaussw
+, 
+delta_approx
+, 
+delta_qsmear
+, 
+delta_smear
+, 
+dvscf_dir
+, 
+do_CHBB
+, 
+do_tdbe
+, 
+dt_tdbe
+, 
+dph_tdbe
+
+E
+ 
+efermi_read
+, 
+eig_read
+, 
+elecselfen
+, 
+elecselfen_type
+, 
+eliashberg
+, 
+elph
+, 
+emax_coulomb
+, 
+emin_coulomb
+, 
+ep_coupling
+, 
+epbwrite, epbread
+, 
+epexst
+, 
+ephwrite
+, 
+epmatkqread
+, 
+eps_acoustic
+, 
+epsiHEG
+, 
+eps_cut_ir
+, 
+epw_memdist
+, 
+epwread
+, 
+epwwrite
+, 
+etf_mem
+, 
+ethrdg_plrn
+, 
+exciton
+, 
+explrn
+, 
+ef_c_tdbe
+, 
+ef_v_tdbe
+, 
+ephmat_dir
+
+F
+ 
+fermi_diff
+, 
+fermi_energy
+, 
+fermi_plot
+, 
+fila2f
+, 
+fildvscf
+, 
+filirobj
+, 
+filkf
+, 
+filnscf_coul
+, 
+filqf
+, 
+filukk
+, 
+filukq
+, 
+fixsym
+, 
+fsthick
+
+G
+ 
+gap_edge
+, 
+gb_scattering
+, 
+gb_only
+, 
+gb_size
+, 
+griddens
+, 
+gridsamp
+
+I
+ 
+imag_read
+, 
+init_ethrdg_plrn
+, 
+init_k0_plrn
+, 
+init_ntau_plrn
+, 
+init_plrn
+, 
+init_sigma_plrn
+, 
+interp_Ank_plrn
+, 
+interp_Bqu_plrn
+, 
+int_mob
+, 
+io_lvl_plrn
+, 
+iterative_bte
+, 
+iverbosity
+, 
+ii_g
+, 
+ii_scattering
+, 
+ii_only
+, 
+ii_lscreen
+, 
+ii_partion
+, 
+ii_charge
+, 
+ii_n
+, 
+ii_eda
+, 
+init_type_tdbe
+, 
+init_sigma_tdbe
+
+K
+ 
+kerread
+, 
+kerwrite
+, 
+kmaps
+
+L
+ 
+lacon
+, 
+laniso
+, 
+lifc
+, 
+limag
+, 
+lindabs
+, 
+liso
+, 
+longrange
+, 
+lopt_w2b
+, 
+lpade
+, 
+lphase
+, 
+lpolar
+, 
+lreal
+, 
+ltrans_crta
+, 
+lscreen
+, 
+lunif
+, 
+loptabs
+, 
+len_mesh
+, 
+lwfpt
+, 
+lscreen_tdbe
+
+M
+ 
+max_memlt
+, 
+meff
+, 
+mob_maxiter
+, 
+mob_maxfreq
+, 
+mob_nfreq
+, 
+mp_mesh_k
+, 
+mp_mesh_q
+, 
+muc
+, 
+muchem
+, 
+meshnum
+
+N
+ 
+nbndsub
+, 
+ncarrier
+, 
+nc
+, 
+nel
+, 
+nest_fn
+, 
+nethrdg_plrn
+, 
+ngaussw
+, 
+niter_plrn
+, 
+nk1, nk2, nk3
+, 
+nkf1, nkf2, nqf3
+, 
+nq1, nq2, nq3
+, 
+nqf1, nqf2, nqf3
+, 
+npade
+, 
+nqsmear
+, 
+nqstep
+, 
+n_r
+, 
+nsiter
+, 
+nsmear
+, 
+nstemp
+, 
+nswi
+, 
+nswc
+, 
+nswfc
+, 
+nw
+, 
+nw_specfun
+, 
+nq_init
+, 
+nbndc_explrn
+, 
+nbndv_explrn
+, 
+negnv_explrn
+, 
+nkf1d, nkf2d, nkf3d
+, 
+nqf1d, nqf2d, nqf3d
+
+O
+ 
+omegamax
+, 
+omegamin
+, 
+omegastep
+
+P
+ 
+phonselfen
+, 
+plselfen
+, 
+plrn
+, 
+positive_matsu
+, 
+prefix
+, 
+prtgkk
+, 
+pwc
+, 
+plot_explrn_e
+, 
+plot_explrn_h
+, 
+phph_tdbe
+, 
+phwmin_tdbe
+
+Q
+ 
+QD_bin
+, 
+QD_min
+
+R
+ 
+rand_nq, rand_nk
+, 
+rand_q, rand_k
+, 
+restart
+, 
+restart_filq
+, 
+restart_plrn
+, 
+restart_step
+, 
+restart_tdbe
+
+S
+ 
+scell_mat
+, 
+scell_mat_plrn
+, 
+scr_typ
+, 
+scatread
+, 
+scattering
+, 
+scattering_serta
+, 
+scattering_0rta
+, 
+scissor
+, 
+selecqread
+, 
+smear_rpa
+, 
+specfun_el
+, 
+specfun_ph
+, 
+specfun_pl
+, 
+sr_crta
+, 
+system_2d
+, 
+shortrange
+, 
+step_wf_grid_plrn
+, 
+start_mesh
+, 
+step_k1_explrn
+, 
+step_k2_explrn
+, 
+step_k3_explrn
+, 
+solver_tdbe
+
+T
+ 
+temps
+, 
+tc_linear
+, 
+tc_linear_solver
+, 
+type_plrn
+, 
+temp_el_tdbe
+, 
+temp_ph_tdbe
+, 
+twrite_tdbe
+, 
+carr_dyn_tdbe
+
+V
+ 
+vme
+
+W
+ 
+wannierize
+, 
+wepexst
+, 
+wmax
+, 
+wmax_specfun
+, 
+wmin
+, 
+wmin_specfun
+, 
+wscut
+, 
+wsfc
+
+/
+
+—- If 
+wannierize
+ = .true. the following input variable apply
+
+auto_projections
+, 
+dis_froz_min, dis_froz_max
+, 
+iprint
+, 
+num_iter
+, 
+proj
+, 
+reduce_unk
+, 
+scdm_entanglement
+, 
+scdm_mu
+, 
+scdm_proj
+, 
+scdm_sigma
+, 
+wannier_plot
+, 
+wannier_plot_list
+, 
+wannier_plot_radius
+, 
+wannier_plot_scale
+, 
+wannier_plot_supercell
+, 
+wdata
+
+Back to Top
+
+—- If a file named 
+quadrupole.fmt
+ is present in the running directory, the code will use quadrupoles
+to perform the interpolation of the electron-phonon matrix elements and dynamical matrices.
+The structure of the file is as follow:
+
+atom
+ 
+dir
+ 
+Qxx
+ 
+Qyy
+ 
+Qzz
+ 
+Qyz
+ 
+Qxz
+ 
+Qxy
+
+1
+ 
+1
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+
+1
+ 
+2
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+
+1
+ 
+3
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+
+2
+ 
+1
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+
+2
+ 
+2
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+
+2
+ 
+3
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+ 
+XXXXXXXX
+
+...
+
+where XXXXXXXX have to be replaced by the value of the quadrupoles which can be obtained, for example,
+using the 
+ABINIT software
+
+Back to Top
+
+a2f
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate Eliashberg spectral function, 
+\(\alpha^2F(\omega)\)
+, transport Eliashberg spectral function 
+\(\alpha^2 F_{\rm tr}(\omega)\)
+, and phonon density of states 
+\(F(\omega)\)
+. Only allowed in the case of 
+phonselfen
+ = .true.
+
+Back to Top
+
+a2f_iso
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the isotropic Eliashberg spectral function 
+\(\alpha^2 F(\omega)\)
+ is calculated on the fly without storing the electron-phonon matrix elements 
+\(|g|^2\)
+ to file. Only compatible with 
+ephwrite
+ = .false. and 
+laniso
+ = .false. (i.e. isotropic Migdal-Eliashberg calculations with 
+liso
+ = .true.).
+
+Back to Top
+
+ahc_nbnd
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Number of bands included in the electron self-energy calculation based on the Allen-Heine-Cardona theory. Must be the same as in the input file for the previous ph.x calculation with electron_phonon = ‘ahc’. Use only if 
+lwfpt
+ = .true.
+
+Back to Top
+
+ahc_nbndskip
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Number of low-lying bands excluded in the electron self-energy calculation based on the Allen-Heine-Cardona theory. Must be the same as in the input file for the previous ph.x calculation with electron_phonon = ‘ahc’.
+
+Back to Top
+
+ahc_win_max
+¶
+
+Type
+
+REAL
+
+Description
+
+The energy upper bound of active-space window for the electron self-energy, expressed in eV. This energy must be below the 
+dis_froz_min, dis_froz_max
+.
+
+Back to Top
+
+ahc_win_min
+¶
+
+Type
+
+REAL
+
+Description
+
+The energy lower bound of active-space window for the electron self-energy, expressed in eV. This energy must be above the 
+dis_froz_min, dis_froz_max
+.
+
+Back to Top
+
+amass(:)
+¶
+
+Variable
+
+amass(i), i=1,ntyp
+
+Type
+
+REAL
+
+Default
+
+0.0
+
+Description
+
+Atomic mass [amu] of each atomic type. If not specified, masses are read from data file.
+
+Back to Top
+
+asr_typ
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘simple’
+
+Description
+
+Kind of acoustic sum rule that can be imposed in real space. Possible ASR are ‘simple’, ‘crystal’, ‘one-dim’ and ‘zero-dim’.
+
+Back to Top
+
+assume_metal
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Assume we have a metal. This flag should only be activated in the context of transport (conductivity or resistivity) calculations. In that case use a Fermi-Dirac distribution.
+
+Back to Top
+
+a_gap0
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d0
+
+Description
+
+Set the shape of initial guess of gap function.
+
+a_gap0 = negative, use a step function.
+
+a_gap0 = 0.0, use an initial guess with no frequency dependence.
+
+a_gap0 > 10^-8, use the Lorentzian: f(iw) = gap0 / (1 + a_gap0 * (iw / wsphmax)**2).
+
+Back to Top
+
+band_plot
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Writes files for band structure and phonon dispersion plots. The k-path and q-path is provided using 
+filkf
+ and 
+filqf
+.
+
+Back to Top
+
+bands_skipped
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+List of bands to exclude from the wannierization, where the number of excluded bands should be smaller or equal to 
+nbndskip
+. For example, 
+bands_skipped
+ 
+=
+ 
+'exclude_bands
+ 
+=
+ 
+1:5'
+ means the first 5 bands are excluded from the wannierization.
+
+Back to Top
+
+bfieldx,
+ 
+bfieldy,
+ 
+bfieldz
+¶
+
+Type
+
+REAL
+
+Default
+
+0.0
+
+Description
+
+The magnetic field in the x, y and z Cartesian directions in [Tesla].
+
+Back to Top
+
+bnd_cum
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Band index for which the cumulant calculation is done. For more than one band, you need to perform multiple calculation and add the results together.
+
+Back to Top
+
+broyden_beta
+¶
+
+Type
+
+REAL
+
+Default
+
+0.7
+
+Description
+
+Mixing factor for Broyden mixing scheme.
+
+Back to Top
+
+broyden_ndim
+¶
+
+Type
+
+INTEGER
+
+Default
+
+8
+
+Description
+
+Number of iterations used in the Broyden mixing scheme.
+
+Back to Top
+
+carrier
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it computes the intrinsic electron or hole mobility such that the carrier concentration is given by 
+ncarrier
+.
+
+Back to Top
+
+calc_nelec_wann
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it computes number of electrons in the wannierized band structure.
+
+Back to Top
+
+conv_thr_iaxis
+¶
+
+Type
+
+REAL
+
+Default
+
+1.d-05
+
+Description
+
+Convergence threshold for iterative solution of imaginary-axis Eliashberg equations.
+
+Back to Top
+
+conv_thr_racon
+¶
+
+Type
+
+REAL
+
+Default
+
+5.d-05
+
+Description
+
+Convergence threshold for iterative solution of the analytic continuation of Eliashberg equations from imaginary- to real-axis.
+
+Back to Top
+
+conv_thr_raxis
+¶
+
+Type
+
+REAL
+
+Default
+
+5.d-04
+
+Description
+
+Convergence threshold for iterative solution of real-axis Eliashberg equations.
+
+Back to Top
+
+cumulant
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. calculates the electron spectral function using the cumulant expansion method. Can be used as independent postprocessing by setting 
+ep_coupling
+ =.false.
+
+Back to Top
+
+degaussq
+¶
+
+Type
+
+REAL
+
+Default
+
+0.05
+
+Description
+
+Smearing for sum over q in the e-ph coupling in [meV]
+
+Back to Top
+
+degaussw
+¶
+
+Type
+
+REAL
+
+Default
+
+0.025
+
+Description
+
+Smearing in the energy-conserving delta functions in [eV]
+
+Back to Top
+
+delta_approx
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the double delta approximation is used to compute the phonon self-energy.
+
+Back to Top
+
+delta_qsmear
+¶
+
+Type
+
+REAL
+
+Default
+
+0.05
+
+Description
+
+Change in the energy for each additional smearing in the a2f in [meV].
+
+Back to Top
+
+delta_smear
+¶
+
+Type
+
+REAL
+
+Default
+
+0.01
+
+Description
+
+Change in the energy for each additional smearing in the phonon self-energy in [eV]
+
+Back to Top
+
+dvscf_dir
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘./’
+
+Description
+
+Directory where ‘prefix.[dvscf|dyn]_q??’ files are located.
+
+Back to Top
+
+do_CHBB
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Use CHBB theory for optical absorption calculation.
+
+Back to Top
+
+efermi_read
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the Fermi energy is read from the input file.
+
+Back to Top
+
+eig_read
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then read a set of eigenvalues from ksdata.fmt. Can be used to read GW (or other) eigenenergies. The code expect a file called “prefix.eig” to be read. One need to provide the same number of bands as in the nscf calculations and all k-points.
+
+Back to Top
+
+elecselfen
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the electron self-energy from the el-ph interaction
+
+Back to Top
+
+elecselfen_type
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘nonadiabatic’
+
+Description
+
+If ‘nonadiabatic’, compute the non-adiabatic electron self-energy (default). If ‘adiabatic’, compute the adiabatic electron self-energy. Only to be used in non-IR-active materials. See 
+J. Chem. Phys. 143, 102813 (2015)
+ for more information.
+
+Back to Top
+
+eliashberg
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the Eliashberg equations and/or calculate the Eliashberg spectral function.
+
+1) if 
+laniso
+ =.true., the anisotropic Eliashberg equations are solved. This requires that .ephmat, .freq, .egnv, .ikmap files are read from the disk. The files are written when 
+ephwrite
+ =.true. in the input file (see 
+ephwrite
+ variable).
+
+2) if 
+liso
+ =.true., the isotropic Eliashberg equations are solved. This requires that either (a) .ephmat, .freq, .egnv, .ikmap files (see 
+ephwrite
+ variable) or (b) isotropic Eliashberg spectral function file (see 
+fila2f
+ variable) are read from the disk.
+
+3) if .not. 
+laniso
+ and .not. 
+liso
+ , the Eliashberg spectral function is calculated. This requires that .ephmat, .freq, .egnv, .ikmap files are read from the disk. The files are written when 
+ephwrite
+ =.true. in the input file (see 
+ephwrite
+ variable).
+
+Note: To reuse .ephmat, .freq, .egnv, .ikmap files obtained in a previous run, one needs to set 
+ep_coupling
+ =.false., 
+elph
+ =.false., and 
+ephwrite
+ =.false. in the input file.
+
+Back to Top
+
+elph
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. calculate e-ph coefficients.
+
+Back to Top
+
+emax_coulomb
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d5
+
+Description
+
+Upper bound of outer window. Only the bands lower than “emax_coulomb + efermi” are considered when 
+icoulomb
+ >= 1.
+
+Back to Top
+
+emin_coulomb
+¶
+
+Type
+
+REAL
+
+Default
+
+-1.0d5
+
+Description
+
+Lower bound of outer window. Only the bands upper than “emin_coulomb + efermi” are considered when 
+icoulomb
+ >= 1.
+
+Back to Top
+
+ep_coupling
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.true.
+
+Description
+
+If .true. run e-ph coupling calculation.
+
+Back to Top
+
+epbwrite,
+ 
+epbread
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If epbwrite = .true., the electron-phonon matrix elements in the coarse Bloch representation and relevant data (dyn matrices) are written to disk. If epbread = .true. the above quantities are read from the ‘prefix.epb’ files. Pool dependent files.
+
+Back to Top
+
+epexst
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then prefix.epmatwp files are already on disk (don’t recalculate). This is a debugging parameter.
+
+Back to Top
+
+ephwrite
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Writes 4 files (in prefix.ephmat directory) that are required when solving the Eliashberg equations. ‘ephmatXX’ (XX: pool dependent files) files with e-ph matrix elements within the Fermi window (
+fsthick
+) on fine k and q meshes on the disk, ‘freq’ file contains the phonon frequencies, ‘egnv’ file contains the eigenvalues within the Fermi window, and ‘ikmap’ file contains the index of the k-point on the irreducible grid within the Fermi window. These files are required to solve the Eliashberg equations when 
+eliashberg
+ = .true.. The files can be reused for subsequent evaluations of the Eliashberg equations at different temperatures. 
+ephwrite
+ doesn’t work with random k- or q-meshes and requires nkf1,nkf2,nkf3 to be multiple of nqf1,nqf2,nqf3.
+
+Back to Top
+
+epmatkqread
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. restart an IBTE calculation from scattering written to files.
+
+Back to Top
+
+eps_acoustic
+¶
+
+Type
+
+REAL
+
+Default
+
+0.1.d0
+
+Description
+
+The lower boundary for the phonon frequency in el-ph and a2f calculations in [cm-1].
+
+Back to Top
+
+epsiHEG
+¶
+
+Type
+
+REAL
+
+Default
+
+0.25d0
+
+Description
+
+Dielectric constant at zero doping for electron-plasmon.
+
+Back to Top
+
+eps_cut_ir
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d-5
+
+Description
+
+A threshold to ignore negligibly small IR coefficients. Works only with 
+gridsamp
+ = 2.
+
+Back to Top
+
+epw_memdist
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Distribute electron-phonon coupling array among MPI processes, reducing memory usage in the interpolation step. Works only with 
+etf_mem
+ == 0.
+
+Back to Top
+
+epwread
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If epwread = .true., the electron-phonon matrix elements in the coarse Wannier representation are read from the ‘epwdata.fmt’ and ‘XX.epmatwpX’ files. Each pool reads the same file. It is used for a restart calculation and requires 
+kmaps
+ = .true. A prior calculation with 
+epwwrite
+ = .true is also required.
+
+Back to Top
+
+epwwrite
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.true.
+
+Description
+
+If epwwrite = .true., the electron-phonon matrix elements in the coarse Wannier representation and relevant data (dyn matrices) are written to disk. Each pool reads the same file.
+
+Back to Top
+
+etf_mem
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+If etf_mem = 1, then all the fine Bloch-space el-ph matrix elements are stored in memory (faster). When etf_mem = 1, more IO (slower) but less memory is required. When etf_mem = 2, an additional loop is done on mode for the fine grid interpolation part. This reduces the memory further by a factor “nmodes”. The etf_mem = 3 is like etf_mem = 1 but the fine k-point grid is generated with points within the 
+fsthick
+ window using k-point symmetry (
+mp_mesh_k
+ = .true. is needed) and the fine q-grid is generated on the fly. The option etf_mem = 3 is used for transport calculations with ultra dense fine momentum grids.
+
+Back to Top
+
+exciton
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate exciton-phonon coupling and optical transition.
+
+Back to Top
+
+explrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. activates the calculation of excitonic polaron. Only relevant when 
+epwread
+ = .true.
+
+Back to Top
+
+fbw
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the anisotropic FBW Migdal-Eliashberg equations.
+
+Back to Top
+
+fermi_diff
+¶
+
+Type
+
+REAL
+
+Default
+
+1.d0
+
+Description
+
+Difference between Fermi energy and band edge (in eV). Only relevant when 
+lscreen
+ = .true.
+
+Back to Top
+
+fermi_energy
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+Value of the Fermi energy read from the input file in [eV].
+
+Back to Top
+
+fermi_plot
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true., write Fermi surface files (in .cube format which can be plotted with VESTA) on 
+nkf1, nkf2, nqf3
+.
+
+Back to Top
+
+fila2f
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Input file with isotropic Eliashberg spectral function. The file contains the Eliashberg spectral function as a function of frequency in [meV]. This file can only be used to calculate the isotropic Eliashberg equations. In this case 
+*.ephmat
+, 
+*.freq
+, 
+*.egnv
+, and 
+*.ikmap
+ files are not required.
+
+Back to Top
+
+fildvscf
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Output file containing deltavscf (not used in calculation)
+
+Back to Top
+
+filirobj
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Input file with the objects of IR-basis. The file contains the IR basis functions and the corresponding sampling points.
+
+See also 
+EPW/irobjs/README.md
+ located under the installation directory.
+
+Back to Top
+
+filkf
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘./’
+
+Description
+
+File which contains the fine k-mesh or the k-path of electronic states to be calculated for elinterp. Crystal coordinates.
+
+Back to Top
+
+filnscf_coul
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Input file with electronic eigenvalues for outer-window contribution required when 
+gridsamp
+ = 2 and 
+icoulomb
+ >= 1. The file should be generated by 
+nscf2supercond.x
+.
+
+Back to Top
+
+filqf
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘./’
+
+Description
+
+File which contains the fine q-mesh or the q-path of phonon states to be calculated for phinterp. Crystal coordinates.
+
+Back to Top
+
+filukk
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘prefix.ukk’
+
+Description
+
+The name of the file containing the rotation matrix U(k) which describes the MLWFs.
+
+Back to Top
+
+filukq
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘prefix.ukq’
+
+Description
+
+The name of the file containing the rotation matrix U(k+q) which describes the MLWFs.
+
+Back to Top
+
+fixsym
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. try to fix the symmetry-related issues.
+
+Back to Top
+
+fsthick
+¶
+
+Type
+
+REAL
+
+Default
+
+1.d10
+
+Description
+
+Width of the Fermi surface window to take into account states in the self-energy delta functions in [eV]. Narrowing this value reduces the number of bands included in the selfenergy calculations.
+
+Back to Top
+
+gap_edge
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+Initial guess for the superconducting gap edge if gap_edge .gt. 0.d0 in [eV]. Otherwise the initial guess for the gap is estimated based on the critical temperature found from the Allen-Dynes formula and BCS ratio (2*gap/T_c=3.52)
+
+Back to Top
+
+gb_scattering
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .TRUE. it calculates grain boundary scattering rate 
+\(\tau_{n\bf{k}} = | \bf{v}_{n\bf{k}} | / L\)
+,
+
+where 
+\(\bf{v}_{n\bf{k}}\)
+ is band group velocity and 
+\(L\)
+ is grain size
+
+Back to Top
+
+gb_only
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .TRUE. it calculates only the grain-boundary-limitted mobility
+
+Back to Top
+
+gb_size
+¶
+
+Type
+
+REAL
+
+Default
+
+0.0d0
+
+Description
+
+Grain size 
+\(L\)
+ in unit of nm
+
+Back to Top
+
+griddens
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d0
+
+Description
+
+Measure of sparsity of the grid (larger values give denser mesh). Works only with 
+gridsamp
+ = 1.
+
+Back to Top
+
+gridsamp
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Type of the Matsubara freq. sampling
+
+gridsamp = -1 reads Matsubara frequencies from a file named 
+matsu-freq.in
+
+gridsamp = 0 generates uniform Matsubara frequency grid
+
+gridsamp = 1 generates sparse Matsubara frequency grid
+
+gridsamp = 2 read from file sparse-ir Matsubara frequencies from a file specified by 
+filirobj
+
+gridsamp = 3 generates uniform Matsubara frequency grid for FFT
+
+If gridsamp = 2, the IR object file must be specified by 
+filirobj
+. You can download some IR object files below.
+
+See also 
+EPW/irobjs/README.md
+ located under the installation directory.
+
+IR
+ 
+object
+ 
+files
+
+Back to Top
+
+icoulomb
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Specify the method for calculating the Coulomb contribution to the Eliashberg eqs. This flag only works when 
+fbw
+ = .true. and 
+gridsamp
+ = 2.
+
+icoulomb = 0, consider only the contribution from the states within 
+fsthick
+ window
+
+icoulomb = 1, consider the contribution from the states within and outside 
+fsthick
+ window
+
+Back to Top
+
+imag_read
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. read from file the superdconducting gap and renormalization function on the imaginary-axis at a temperature XX. The required file is ‘prefix.imag_aniso_XX’. The temperature should be specified as 
+temps(1)
+ =XX in the input file. This flag works if 
+limag
+ =.true. and 
+laniso
+ =.true., and can be used to:
+
+(1) solve the Eliashberg equations on the real-axis with 
+lpade
+ =.true. or 
+lacon
+ =.true. starting from the imaginary-axis solutions at temperature XX;
+
+(2) solve the Eliashberg equations on the imaginary-axis at temperatures grater than XX using as a starting point the gap estimated at temperature XX.
+
+(3) write to file the superconducting gap on the Fermi surface in cube format at temperature XX. The output file is ‘prefix.imag_aniso_gap_XX_YY.cube’, where YY is the band number within the chosen energy window during the EPW calculation. The file is written if 
+iverbosity
+ =2.
+
+Back to Top
+
+int_mob
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. and 
+carrier
+ = .false. it compute the intrinsic mobility such that the electron carrier concentration and hole concentration are the same (only one Fermi level) and give both electron and hole mobility in the same run. If the gap is too big, the number of carrier will be so small that the code will be unstable. If .true. and 
+carrier
+ = .true. it will compute the intrinsic electron and hole mobility with two Fermi level such that the electron and hole carrier concentration is 
+ncarrier
+.
+
+Back to Top
+
+iterative_bte
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it compute the iterative Boltzmann Transport Equation (IBTE) intrinsic mobility such that the electron carrier concentration and hole concentration are the same (only one Fermi level) and give both electron and hole mobility in the same run. If the gap is too big, the number of carrier will be so small that the code will be unstable. If .true. and 
+carrier
+ = .true. it will compute the intrinsic electron and hole mobility with two Fermi level such that the electron and hole carrier concentration is 
+ncarrier
+. Also see 
+mob_maxiter
+.
+
+Note that the IBTE can only be solved on a 
+homogeneous grid
+. You can use k-point symmetry to reduce the computational time with 
+mp_mesh_k
+.
+
+Back to Top
+
+iverbosity
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+0 = short output
+
+1 = verbose output.
+
+2 = verbose output for the superconducting part only.
+
+3 = verbose output for the electron-phonon part only [mode resolved linewidths etc..].
+
+Back to Top
+
+ii_g
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it calculates the ionized impurity matrix elements
+
+Back to Top
+
+ii_scattering
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it calculates the the carrier-ionized impurity scattering rate
+
+Back to Top
+
+ii_only
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it calculates only the ionized-impurity-limitted mobility
+
+Back to Top
+
+ii_lscreen
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.true.
+
+Description
+
+If .true. it calculates and uses free-carrier screening of ii_g matrix elements, else calculations will
+
+diverge with increasing density of k-point due to 1/(q^4) divergence for ionized impurity scattering rate
+
+Back to Top
+
+ii_partion
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it accounts for partial ionization
+
+Back to Top
+
+ii_charge
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0
+
+Description
+
+Charge of the ionized impurities in units of elementary charge
+
+Back to Top
+
+ii_n
+¶
+
+Type
+
+REAL
+
+Default
+
+0.0d0
+
+Description
+
+Density of impurities, input in units of cm^-3 (cm^-2 in 2D-currently under development)
+
+Back to Top
+
+ii_eda
+¶
+
+Type
+
+REAL
+
+Default
+
+0.0d0
+
+Description
+
+Ionization energy of the donor or accpetor impurity, for partial ionization calculations
+
+Back to Top
+
+kerread
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. read Kp and Km kernels from files .ker when solving the real-axis Eliashberg equations.
+
+Back to Top
+
+kerwrite
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. write Kp and Km kernels to files .ker when solving the real-axis Eliashberg equations.
+
+Back to Top
+
+kmaps
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Generate the map k+q –> k for folding the rotation matrix U(k+q). If .true., the program reads ‘prefix.kmap’ and ‘prefix.kgmap’ from file. If .false., they are calculated.
+
+Note that for a restart with 
+epwread
+ =.true., kmaps also needs to be set to true (since the information to potentially calculate kgmaps is not generated in a restart run). However, the files “prefix.kmap” and “prefix.kgmap” themselves are actually not used if epwread=.true. and hence need not actually be there.
+
+Back to Top
+
+lacon
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. an analytic continuation to continue the imaginary-axis Eliashberg equations to real-axis. This flag requires 
+limag
+ =.true. and 
+lpade
+ =.true.
+
+Back to Top
+
+laniso
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the anisotropic Eliashberg equations on the imaginary-axis. To solve the equations, 
+*.ephmat
+, 
+*.freq
+, 
+*.egnv
+, and 
+*.ikmap
+ files should be provided. These files are described under ephwrite variable.
+
+Back to Top
+
+lifc
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. uses the real-space inter-atomic force constant generated by q2r.x. The resulting file must be named “ifc.q2r”. The file has to be placed in the same directory as the dvscf files. In the case of SOC, the file must be named “ifc.q2r.xml” and be in xml format. See 
+asr_typ
+ for the type of acoustic sum rules that can be imposed.
+
+Back to Top
+
+limag
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the imaginary-axis Eliashberg equations.
+
+Back to Top
+
+lindabs
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. computes indirect phonon absorption. See the input variables 
+omegamax
+, 
+omegamin
+, 
+omegastep
+ and 
+n_r
+.
+
+Back to Top
+
+liso
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the isotropic Eliashberg equations on the real- or imaginary-axis. To solve the equations provide either: (1) Eliashberg spectral function file using fila2f variable. (2) 
+*.ephmat
+, 
+*.freq
+, 
+*.egnv
+, and 
+*.ikmap
+ files. These files are described under ephwrite variable.
+
+Back to Top
+
+lpade
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. Padé approximants to continue the imaginary-axis Eliashberg equations to real-axis. This works with 
+limag
+ =.true.
+
+Back to Top
+
+lphase
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then fix the gauge for the interpolated dynamical matrix and electronic Hamiltonian.
+
+Back to Top
+
+lpolar
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. enable the correct Wannier interpolation in the case of polar material.
+
+Back to Top
+
+lreal
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the Eliashberg equations directly on the real-axis. Only the isotropic case (
+liso
+ =.true.) is implemented.
+
+Back to Top
+
+ltrans_crta
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. it calculates the transport properties with constant relaxation time approximation (CRTA). The scattering rate should be given by 
+sr_crta
+.
+
+Back to Top
+
+lscreen
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the el-ph matrix elements are screened by the RPA or TF dielectric function. See (
+scr_typ
+).
+
+Back to Top
+
+lunif
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.true.
+
+Description
+
+If .true. a uniform frequency grid is defined between (wsfc,wscut) for solving the real-axis Eliashberg equations. Works only with 
+lreal
+ =.true.
+
+Back to Top
+
+lwfpt
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. enable Wannier function perturbation theory calculations. See 
+Phys. Rev. X 11, 041053 (2021)
+ for more information.
+
+Back to Top
+
+longrange
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. only the long-range part of the electron-phonon matrix elements are calculated. Works only with 
+lpolar
+ =.true.
+
+Back to Top
+
+lopt_w2b
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. use optimized version of Wannier-to-Bloch Fourier transformation for the electron-phonon coupling (see Eqs. 8 and 9 of 
+SciPost Phys. 15, 062 (2023)
+). To be used only when the q points are sampled from a uniform mesh or a product of one-dimensional meshes.
+
+Back to Top
+
+loptabs
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. optical absorption spectra including phonon-assisted and direct transitions using quasi-degenerate perturbation theory.
+
+Back to Top
+
+len_mesh
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Number of quasi-degenerate meshgrids for optical absorption spectra using quasi-degenerate perturbation theory.
+
+Back to Top
+
+max_memlt
+¶
+
+Type
+
+REAL
+
+Default
+
+2.85d0
+
+Description
+
+Maximum memory that can be allocated per pool in [Gb].
+
+Back to Top
+
+meff
+¶
+
+Type
+
+REAL
+
+Default
+
+12.0
+
+Description
+
+Density of state effective mass for electron-plasmon.
+
+Back to Top
+
+mob_maxfreq
+¶
+
+Type
+
+REAL
+
+Default
+
+100
+
+Description
+
+Maximum frequency (in [meV]) for spectral decomposition of scattering rates. Typically that freq. is the highest phonon freq. Only works with 
+iverbosity
+ == 3.
+
+Back to Top
+
+mob_nfreq
+¶
+
+Type
+
+INTEGER
+
+Default
+
+100
+
+Description
+
+Number of frequency steps from 0 to 
+mob_maxfreq
+ used for the spectral decomposition of the scattering rates. Only works with 
+iverbosity
+ == 3.
+
+Back to Top
+
+mob_maxiter
+¶
+
+Type
+
+INTEGER
+
+Default
+
+50
+
+Description
+
+Maximum number of iteration during the IBTE.
+
+Back to Top
+
+mp_mesh_k
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true., fine electronic mesh is in the irr. wedge, else a uniform grid throughout the BZ is used.
+
+Back to Top
+
+mp_mesh_q
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true., fine phonon mesh is in the irr. wedge, else a uniform grid throughout the BZ is used. Not currently in use.
+
+Back to Top
+
+meshnum
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Final meshgrid to be performed using quasi-degenerate perturbation theory, maximum value:ref:
+len_mesh
+ - 1, used with 
+start_mesh
+ for restart calculations.
+
+Back to Top
+
+nbndsub
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Number of wannier functions to utilize.
+
+Back to Top
+
+nbndc_explrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+2
+
+Description
+
+Number of conduction bands for exciton calculation.
+
+Back to Top
+
+nbndv_explrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+2
+
+Description
+
+Number of valence bands for exciton calculation.
+
+Back to Top
+
+negnv_explrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Number of exciton states to be included in the ex-polaron calculation.
+
+Back to Top
+
+ncarrier
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d+13
+
+Description
+
+If 
+carrier
+ = .true. then compute the intrinsic mobility with ncarrier concentration (in cm^-3). If 
+ncarrier
+ is positive it will compute the electron mobility and if it is negative it will compute the hole mobility. If 
+int_mob
+ is also .true. then it will compute both the electron and hole mobility, which is the recommended way to compute mobility.
+
+Back to Top
+
+nc
+¶
+
+Type
+
+REAL
+
+Default
+
+4.0d0
+
+Description
+
+Number of carriers per unit cell that participate to the conduction in the Ziman’s resistivity formula. Typically this corresponds to the number of bands crossing the Fermi level. This can be a fractional number.
+
+Back to Top
+
+nel
+¶
+
+Type
+
+REAL
+
+Default
+
+0.01
+
+Description
+
+Carrier concentration for electron-plasmon.
+
+Back to Top
+
+nest_fn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the electronic nesting function.
+
+Back to Top
+
+ngaussw
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Smearing type for FS average after Wannier interpolation
+
+Back to Top
+
+nk1,
+ 
+nk2,
+ 
+nk3
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Dimensions of the coarse electronic grid, corresponds to the nscf calculation and wfs in the outdir.
+
+Back to Top
+
+nkf1,
+ 
+nkf2,
+ 
+nqf3
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Dimensions of the fine electron grid, if 
+filkf
+ is not given.
+
+Back to Top
+
+nq1,
+ 
+nq2,
+ 
+nq3
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Dimensions of the coarse phonon grid, corresponds to the nqs list.
+
+Back to Top
+
+nqf1,
+ 
+nqf2,
+ 
+nqf3
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Dimensions of the fine phonon grid, if 
+filqf
+ is not given.
+
+Back to Top
+
+npade
+¶
+
+Type
+
+INTEGER
+
+Default
+
+90
+
+Description
+
+Percentage of Matsubara points used in Padé continuation.
+
+Back to Top
+
+nqsmear
+¶
+
+Type
+
+INTEGER
+
+Default
+
+10
+
+Description
+
+Number of different smearings used to calculate the a2f.
+
+Back to Top
+
+nqstep
+¶
+
+Type
+
+REAL
+
+Default
+
+500
+
+Description
+
+Number of steps used to calculate the a2f
+
+Back to Top
+
+n_r
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0
+
+Description
+
+Refractive index used when 
+lindabs
+ = .true.
+
+Back to Top
+
+nsiter
+¶
+
+Type
+
+INTEGER
+
+Default
+
+40
+
+Description
+
+Number of iteration for the self-consistency cycle when solving the real- or imaginary-axis Eliashberg equations.
+
+Back to Top
+
+nsmear
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Number of different smearings used to calculate the phonon self-energy.
+
+Back to Top
+
+nstemp
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Number of temperature points used for superconductivitiy, transport, indabs, etc.. If nstemp is left blank, or is equivalent to the number of entries in 
+temps(:)
+, then the temperatures provided in 
+temps(:)
+ are used. If nstemp>2 and only two temperatures are given in 
+temps(:)
+, then an evenly spaced temperature grid with steps between points given by (temps(2) - temps(1)) / (nstemp-1) is generated. This grid contains nstemp points. nstemp cannot be larger than 50.
+
+Back to Top
+
+nswi
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Number of frequency grid points when solving the imaginary-axis Eliashberg equations. If nswi > 0, 
+wscut
+ is ignored. Works only with 
+limag
+ =.true.
+
+Back to Top
+
+nswc
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Number of frequency grid points between (
+wsfc
+, 
+wscut
+) when solving the real-axis Eliashberg equations. Works only with lreal=.true.
+
+Back to Top
+
+nswfc
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+Number of frequency grid points between (0, 
+wsfc
+) when solving the real-axis Eliashberg equations. Works only with 
+lreal
+ =.true.
+
+Back to Top
+
+nq_init
+¶
+
+Type
+
+INTEGER
+
+Default
+
+-1
+
+Description
+
+Phonon occupation for quasi-degenerate perturbation theory, -1 for Bose-Einstein, -2 for integer Bose-Einstein, -3 for Monte-Carlo method of integration.
+
+Back to Top
+
+muc
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+Effective Coulomb potential used in the Eliashberg equations.
+
+Back to Top
+
+muchem
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. solve the FBW Migdal-Eliashberg equations with variable chemical potential. Works only with 
+fbw
+ = .true.
+
+Back to Top
+
+nw
+¶
+
+Type
+
+INTEGER
+
+Default
+
+10
+
+Description
+
+Number of bins for frequency scan in delta( e_k - e_k+q - w).
+
+Back to Top
+
+nw_specfun
+¶
+
+Type
+
+INTEGER
+
+Default
+
+100
+
+Description
+
+Number of bins for frequency in electron spectral function.
+
+Back to Top
+
+omegamax
+¶
+
+Type
+
+REAL
+
+Default
+
+10
+
+Description
+
+Photon energy maximum (in eV) when 
+lindabs
+ = .true.
+
+Back to Top
+
+omegamin
+¶
+
+Type
+
+REAL
+
+Default
+
+0
+
+Description
+
+Photon energy minimum (in eV) when 
+lindabs
+ = .true.
+
+Back to Top
+
+omegastep
+¶
+
+Type
+
+REAL
+
+Default
+
+1
+
+Description
+
+Steps in photon energy (in eV) when 
+lindabs
+ = .true.
+
+Back to Top
+
+outdir
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘./’
+
+Description
+
+Scratch directory.
+
+Back to Top
+
+phonselfen
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the phonon self-energy from the el-ph interaction.
+
+Back to Top
+
+plot_explrn_e
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. plot the electron density of excitonic polaron. Will skip the explrn calculations
+
+Back to Top
+
+plot_explrn_h
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. plot the hole density of excitonic polaron. Will skip the explrn calculations
+
+Back to Top
+
+plselfen
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the electron-plasmon self-energy (model). It requires the definition of 
+nel
+, 
+meff
+ and 
+epsiHEG
+.
+
+Back to Top
+
+positive_matsu
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.true.
+
+Description
+
+If .true. the domain of Matsubara frequency is limited to positive.
+
+Back to Top
+
+prefix
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘pwscf’
+
+Description
+
+Prepended to input/output filenames. Must be the same used in the calculation of the wfs and phonons.
+
+Back to Top
+
+prtgkk
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Allows to print the electron-phonon vertex 
+|g|
+ (in meV) for each q-point, k-point, i-band, j-band and modes.
+
+Note: Average over degenerate i-band, j-band and modes is performed but not on degenerate k or q-points.
+
+Warning: this produces huge text data in the main output file and considerably slows down the calculation.
+
+Suggestion: Use only 1 k-point (like Gamma).
+
+Back to Top
+
+pwc
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0
+
+Description
+
+Power used to define a non-uniform grid between (
+wsfc
+, 
+wscut
+) when solving the real-axis Eliashberg equations. Works only if 
+lreal
+ =.true.
+
+Back to Top
+
+QD_bin
+¶
+
+Type
+
+REAL
+
+Default
+
+0.1
+
+Description
+
+Size of many-body meshgrid for quasi-degenerate perturbation theory (in eV).
+
+Back to Top
+
+QD_min
+¶
+
+Type
+
+REAL
+
+Default
+
+0.0
+
+Description
+
+Starting energy for quasi-degenerate perturbation theory (in eV).
+
+Back to Top
+
+rand_nq,
+ 
+rand_nk
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+number of random q,k-vectors on the fine mesh
+
+Back to Top
+
+rand_q,
+ 
+rand_k
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+q/k-vectors on the fine mesh are generated randomly
+
+Back to Top
+
+restart
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Create a restart point every 
+restart_step
+ q-points from the fine grid during the interpolation stage.
+
+Back to Top
+
+restart_filq
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Input file to restart from an exisiting q-file. Use to merge different q-grid scattering rates.
+
+Back to Top
+
+restart_step
+¶
+
+Type
+
+INTEGER
+
+Default
+
+100
+
+Description
+
+Frequency of restart points during the fine q-grid interpolation phase. This produces restart files called XXX.sigma_restart1
+
+Back to Top
+
+scr_typ
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+If 0 calculates the Lindhard screening, if 1 the Thomas-Fermi screening. Only relevant if 
+lscreen
+ = .true.
+
+Back to Top
+
+scatread
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the current scattering rate file is read from file.
+
+Back to Top
+
+scattering
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. computes scattering rates. See also 
+scattering_serta
+ for the type of scattering.
+
+Back to Top
+
+scattering_serta
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. computes scattering rates in the self-energy relaxation time approximation. See 
+S. Poncé, E. R. Margine and F. Giustino, Phys. Rev. B 97, 121201 (2018)
+ for more information.
+
+Back to Top
+
+scattering_0rta
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then the scattering rates are calculated using 0th order relaxation time approximation.
+
+Back to Top
+
+scissor
+¶
+
+Type
+
+REAL
+
+Default
+
+0.0
+
+Description
+
+Gives the value of the scissor shift of the gap (in eV).
+
+Back to Top
+
+selecqread
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then restart from the selecq.fmt file
+
+Back to Top
+
+smear_rpa
+¶
+
+Type
+
+REAL
+
+Default
+
+0.05d0
+
+Description
+
+Smearing for the calculation of the Lindhard function (in eV). Only relevant if 
+lscreen
+ = .true.
+
+Back to Top
+
+specfun_el
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the electron spectral function from the e-ph interaction. The relevant variables in this case are 
+wmin_specfun
+, 
+wmax_specfun
+ and 
+nw_specfun
+.
+
+Back to Top
+
+specfun_ph
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the phonon spectral function from the e-ph interaction. The relevant variables in this case are 
+wmin_specfun
+, 
+wmax_specfun
+ and 
+nw_specfun
+.
+
+Back to Top
+
+specfun_pl
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate electron-plasmon spectral function. The relevant variables in this case are 
+wmin_specfun
+, 
+wmax_specfun
+ and 
+nw_specfun
+. See also 
+nel
+, 
+meff
+, 
+epsiHEG
+.
+
+Back to Top
+
+sr_crta
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d0
+
+Description
+
+If 
+ltrans_crta
+ = .true. then compute the transport properties with constant relaxation time approximation with a constant scattering rate sr_crta in [THz].
+
+Back to Top
+
+system_2d
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘no’
+
+Description
+
+‘no’ then 3D bulk materials
+
+‘gaussian’ then the long-range terms include dipoles only and the range separation function is approximated by a Gaussian following Ref. Phys. Rev. B 94, 085415 (2016)
+
+‘dipole_sp’ then the long-range terms include dipoles following PRB 107, 155424 (2023)
+
+‘quadrupole’ then the long-range terms include dipoles and quadrupoles terms following PRL 130, 166301 (2023) and requires the presence of a “quadrupole.fmt” file.
+
+‘dipole_sh’ then the long-range terms include dipoles following [PRB 105, 115414 (2022)]
+
+Back to Top
+
+shortrange
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then computes the short-range part of the electron-phonon matrix elements. Works only with 
+lpolar
+ =.true.
+
+Back to Top
+
+start_mesh
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Starting mesh for optical absorption for quasi-degenerate perturbation theory, used with 
+meshnum
+ for restart calculations.
+
+Back to Top
+
+step_k1_explrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+In the full k-grid, choose k points for every step_k_explrn to construct the exciton polaron Hamiltonian. For example, if the full grid is 6x6x6, and step_k1_explrn = step_k2_explrn = step_k3_explrn = 2, then a 3x3x3 grid will be used in the end. Note when constructing the exciton-phonon coupling matrix, the full grid is always used.
+
+Back to Top
+
+step_k2_explrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Check the description of 
+step_k1_explrn
+
+Back to Top
+
+step_k3_explrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Check the description of 
+step_k1_explrn
+
+Back to Top
+
+temps
+¶
+
+Type
+
+REAL(
+nstemp
+)
+
+Default
+
+300.d0 Kelvin
+
+Description
+
+Temperature values used in superconductivitiy, transport, indabs, etc. in kelvin unit. If no temps are provided, temps=300 and 
+nstemp
+ =1. If two temps are provided, with temps(1)<temps(2) and 
+nstemp
+ >2, then temps is transformed into an evenly spaced grid with 
+nstemp
+ points, including temps(1) and temps(2) as the minimum and maximum values, respectively [Ex) 
+nstemp
+ 
+=
+ 
+5
+ 
+temps
+ 
+=
+ 
+300
+ 
+500
+]. In this case, points are spaced according to (temps(2) - temps(1)) / (nstemp-1). Otherwise, temps is treated as a list, with the given temperatures used directly [Ex) 
+temps
+ 
+=
+ 
+17
+ 
+20
+ 
+30
+]. No more than 50 temperatures can be supplied in this way.
+
+Back to Top
+
+tc_linear
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. linearized Eliashberg eqn. for superconducting transition temperature Tc will be solved.
+
+Back to Top
+
+tc_linear_solver
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘power’
+
+Description
+
+Algorithm to solve Tc eigenvalue problem. Possible algorithms are ‘power’, and ‘lapack’.
+
+Back to Top
+
+vme
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘wannier’
+
+Description
+
+if ‘dipole’ then computes the velocity as dipole+commutator = <psi_{mk} 
+|p+i[V_{NL},r]|
+ psi_{nk}>`. If ‘wannier’ then computes the velocity as dH_nmk/dk - i(e_nk-e_mk)A_nmk where A is the Berry connection. Note: Before v5.4, vme = .FALSE. was the velocity in the local approximation as <psi_mk|p|psi_nk>. Before v5.4, vme = .TRUE. was the same as ‘wannier’.
+
+Back to Top
+
+wannierize
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+Calculate the Wannier functions using W90 library calls and write rotation matrix to file ‘filukk’. If .false., filukk is read from disk.
+
+Back to Top
+
+wepexst
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then prefix.epmatwe files are already on disk (don’t recalculate). This is a debugging parameter.
+
+Back to Top
+
+wmax
+¶
+
+Type
+
+REAL
+
+Default
+
+0.3d0
+
+Description
+
+Max frequency in 
+\(\delta( \epsilon_{\bf k} - \epsilon_{\bf{k}+\bf{q}} - \omega)\)
+.
+
+Back to Top
+
+wmax_specfun
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+The upper boundary for the frequency in the electron spectral function in [eV].
+
+Back to Top
+
+wmin
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+Min frequency in 
+\(\delta( \epsilon_{\bf k} - \epsilon_{\bf{k}+\bf{q}} - \omega)\)
+.
+
+Back to Top
+
+wmin_specfun
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+The lower boundary for the frequency in the electron spectral function in [eV].
+
+Back to Top
+
+wscut
+¶
+
+Type
+
+REAL
+
+Default
+
+1.d0
+
+Description
+
+Upper limit over frequency integration/summation in the Eliashberg equations in [eV]. For 
+limag
+ =.true., wscut is ignored if the number of frequency points is given using variable nswi.
+
+Back to Top
+
+wsfc
+¶
+
+Type
+
+REAL
+
+Default
+
+0.5 * 
+wscut
+
+Description
+
+Intermediate frequency between (0, 
+wscut
+) in the integration of the real-axis Eliashberg equations in [eV]. Works only with 
+lreal
+ =.true.
+
+Back to Top
+
+auto_projections
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then automatically generate initial projections for Wannier90. It requires 
+scdm_proj
+ =.true.
+
+Back to Top
+
+dis_froz_min,
+ 
+dis_froz_max
+¶
+
+Type
+
+REAL
+
+Default
+
+-9999.d0, 9999.d0
+
+Description
+
+Window which includes frozen states for Wannier90. See wannier90 documentation.
+
+Back to Top
+
+dis_win_min,
+ 
+dis_win_max
+¶
+
+Type
+
+REAL
+
+Default
+
+-9999.d0, 9999.d0
+
+Description
+
+Minimum and maximum value of the outer window. See wannier90 documentation.
+
+Back to Top
+
+iprint
+¶
+
+Type
+
+INTEGER
+
+Default
+
+2
+
+Description
+
+Verbosity level of Wannier90 code. See wannier90 documentation.
+
+Back to Top
+
+num_iter
+¶
+
+Type
+
+INTEGER
+
+Default
+
+200
+
+Description
+
+Number of iterations passed to Wannier90 for minimization. See wannier90 documentation.
+
+Back to Top
+
+proj(:)
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Initial projections used in the Wannier90 calculation. Simple solution is 
+proj(1)
+ 
+=
+ 
+'random'
+. See wannier90 documentation.
+
+Back to Top
+
+reduce_unk
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then plot Wannier functions on reduced grids.
+
+Back to Top
+
+scdm_entanglement
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+‘isolated’
+
+Description
+
+Disentanglement type in the SCDM algorithm.
+
+Back to Top
+
+scdm_mu
+¶
+
+Type
+
+REAL
+
+Default
+
+0.d0
+
+Description
+
+Parameter for Wannier functions via SCDM algorithm.
+
+Back to Top
+
+scdm_proj
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then calculate MLWFs without an initial guess via the SCDM algorithm.
+
+Back to Top
+
+scdm_sigma
+¶
+
+Type
+
+REAL
+
+Default
+
+1.d0
+
+Description
+
+Parameter for Wannier functions via SCDM algorithm.
+
+Back to Top
+
+wannier_plot
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. then plot Wannier functions.
+
+Back to Top
+
+wannier_plot_list
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Field read for parsing Wannier function list.
+
+Back to Top
+
+wannier_plot_radius
+¶
+
+Type
+
+REAL
+
+Default
+
+3.5d0
+
+Description
+
+Cut-off radius for plotting Wannier functions.
+
+Back to Top
+
+wannier_plot_scale
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d0
+
+Description
+
+Scaling parameter for cube files.
+
+Back to Top
+
+wannier_plot_supercell
+¶
+
+Type
+
+INTEGER(3)
+
+Default
+
+(/5,5,5/)
+
+Description
+
+Size of supercell for plotting Wannier functions
+
+Back to Top
+
+wdata(:)
+¶
+
+Type
+
+CHARACTER
+
+Default
+
+''
+
+Description
+
+Any extra inforumation to be used in the Wannier90 calculation should be included here. These characters will be written to the ‘prefix.win’ file. For example to plot the first Wannier function in xcrysden format:
+
+—————————————————–
+
+wdata(1)
+ 
+=
+ 
+'wannier_plot
+ 
+=
+ 
+true'
+
+wdata(2)
+ 
+=
+ 
+'wannier_plot_list
+ 
+:
+ 
+1'
+
+—————————————————–
+
+See wannier90 documentation.
+
+Back to Top
+
+plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. polaron calculations are activated.
+
+Back to Top
+
+type_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+-1
+
+Description
+
+Polaron type, -1 for electron polaron and 1 for hole polaron.
+
+Back to Top
+
+init_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Method to initialize the polaron wavefunction in the self-consistent loop. 1 for Gaussian wave function initialization (see 
+init_sigma_plrn
+). 6 for fixed atomic displacement configuration 
+\(\{\Delta \tau_{\kappa\alpha p}\}\)
+ initialization (see 
+init_ntau_plrn
+).
+
+Back to Top
+
+init_sigma_plrn
+¶
+
+Type
+
+REAL
+
+Default
+
+4.6
+
+Description
+
+Width (in bohr) of Gaussian initialization wave function, 
+\(A_{n\mathbf{k}} = \exp(-\sigma_p|\mathbf{k}-\mathbf{k}_0|)\)
+, where 
+\(\mathbf{k}_0\)
+ is given by 
+init_k0_plrn
+.
+
+Back to Top
+
+init_k0_plrn
+¶
+
+Type
+
+REAL, DIMENSION(3)
+
+Default
+
+\(\mathbf{k}_{\mathrm{CBM/VBM}}\)
+
+Description
+
+\(\mathbf{k}\)
+-point (in crystal coordinates) in which the initialization Gaussian wave packet is centered.
+
+Back to Top
+
+init_ntau_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Number of atomic displacements configurations to be considered if 
+init_plrn
+ =6. If init_ntau_plrn=1, the displacements are read from the dtau_disp.plrn file. If init_ntau_plrn=N>1, the displacements are read from the dtau_disp.plrn_i, where i=1, …, N, files.
+
+Back to Top
+
+conv_thr_plrn
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d-5
+
+Description
+
+The converge threshold in the ab initio polaron equations (in bohr). The self-consistency is achieved when 
+\(\max|\Delta \tau^{\mathrm{save}}_{\kappa\alpha p} - \Delta \tau_{\kappa\alpha p}| < \varepsilon_\mathrm{scf}\)
+.
+
+Back to Top
+
+niter_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+50
+
+Description
+
+The maximum number of iterations in the self-consistent loop in the ab initio polaron equations.
+
+Back to Top
+
+ethrdg_plrn
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d-6
+
+Description
+
+Converge threshold (in Ry) in the diagonalization of the effective polaron Hamiltonian.
+
+Back to Top
+
+adapt_ethrdg_plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the adaptive diagonalization threshold for the effective polaron Hamiltonian is activated.
+
+Back to Top
+
+init_ethrdg_plrn
+¶
+
+Type
+
+REAL
+
+Default
+
+1.0d-2
+
+Description
+
+Initial coarse threshold (in Ry) to be considered in the diagonalization of the effective polaron Hamiltonian.
+
+Back to Top
+
+nethrdg_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+11
+
+Description
+
+Number of adaptive diagonalization thresholds to be considered, in logarithmic steps, until reaching final ethrdg_plrn.
+
+Back to Top
+
+io_lvl_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+0
+
+Description
+
+I/O level of polaron calculations. If io_lvl_plrn=1, write/read electron-phonon matrix elements to file. If io_lvl_plrn=0, keep them in memory.
+
+Back to Top
+
+restart_plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. self-consistent solution of polaron equations is skipped and post-processing calculations are activated.
+
+Back to Top
+
+interp_Bqu_plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. 
+\(B_{\mathbf{q}\nu}\)
+ is interpolated into the fine q-grid or path.
+
+Back to Top
+
+interp_Ank_plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. 
+\(A_{n\mathbf{k}}\)
+ is interpolated into the fine k-grid or path.
+
+Back to Top
+
+cal_psir_plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the real-space polaron wavefunction 
+\(\Psi(\mathbf{r})\)
+ is calculated (see 
+step_wf_grid_plrn
+). Output file is written in .xsf format (psir_plrn.xsf).
+
+Back to Top
+
+step_wf_grid_plrn
+¶
+
+Type
+
+INTEGER
+
+Default
+
+1
+
+Description
+
+Write 
+\(\Psi(\mathbf{r})\)
+ only in every step_wf_grid_plrn grid point of the original grid, given by the Wannier function .cube files.
+
+Back to Top
+
+scell_mat_plrn
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. the non-diagonal supercell calculation is activated for polarons.
+
+Back to Top
+
+scell_mat
+¶
+
+Type
+
+INTEGER, DIMENSION(3, 3)
+
+Default
+
+(/ (/1, 0, 0/), (/0, 1, 0/), (/0, 0, 1/) /)
+
+Description
+
+Transformation matrix 
+\(S\)
+ from the unit cell to the (in general non-diagonal) supercell. 
+\(\vec{a}_{s} = S \vec{a}_p\)
+, where 
+\(\vec{a}_{s}\)
+ and 
+\(\vec{a}_{p}\)
+ indicate supercell and the unit cell lattice vectors, respectively.
+
+Back to Top
+
+do_tdbe
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. start time propagating the Boltzmann Transport Equation (TDBE).
+
+Back to Top
+
+dt_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Time step for TDBE propagation in femtoseconds.
+
+Back to Top
+
+nt_tdbe
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Number of time steps for TDBE. Should be defined in 
+epwcom
+.
+
+Back to Top
+
+twrite_tdbe
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Interval for writing output during TDBE propagation.
+
+Back to Top
+
+temp_el_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Initial electronic temperature for TDBE simulations.
+
+Back to Top
+
+temp_ph_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Initial phononic temperature for TDBE simulations.
+
+Back to Top
+
+init_type_tdbe
+¶
+
+Type
+
+CHARACTER(LEN = 75)
+
+Description
+
+Type of initial carrier distribution.
+
+Back to Top
+
+init_sigma_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Gaussian smearing parameter for initial carrier distribution.
+
+Back to Top
+
+solver_tdbe
+¶
+
+Type
+
+CHARACTER(LEN = 75)
+
+Description
+
+Time propagation method for solving TDBE.
+
+Back to Top
+
+ef_c_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Initial energy of hot electron or chemical potential of electrons.
+
+Back to Top
+
+ef_v_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Initial energy of hot hole or chemical potential of holes.
+
+Back to Top
+
+carr_dyn_tdbe
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Type of carrier dynamics in TDBE simulations.
+
+1 = electron dynamics
+
+2 = hole dynamics
+
+3 = both electron and hole dynamics
+
+Back to Top
+
+dg_tdbe
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. use two different grids for energy and e-ph matrix elements.
+
+Back to Top
+
+nqf1d,
+ 
+nqf2d,
+ 
+nqf3d
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Double grid dimensions for phonon q-points in TDBE simulations.
+
+Back to Top
+
+nkf1d,
+ 
+nkf2d,
+ 
+nkf3d
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Double grid dimensions for electron k-points in TDBE simulations.
+
+Back to Top
+
+dph_tdbe
+¶
+
+Type
+
+INTEGER
+
+Description
+
+Ratio between time step for e-ph interaction and that for ph-ph interaction.
+
+Back to Top
+
+restart_tdbe
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. restart TDBE from a previous interrupted calculation.
+
+Back to Top
+
+phph_tdbe
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. include phonon-phonon scattering in TDBE simulations.
+
+Back to Top
+
+phwmin_tdbe
+¶
+
+Type
+
+REAL(KIND = DP)
+
+Description
+
+Minimum phonon frequency for phonon-phonon calculations.
+
+Back to Top
+
+ephmat_dir
+¶
+
+Type
+
+CHARACTER(LEN = 100)
+
+Default
+
+‘./’
+
+Description
+
+Path to the electron-phonon matrix elements (
+prefix.ephmat
+).
+
+Back to Top
+
+lscreen_tdbe
+¶
+
+Type
+
+LOGICAL
+
+Default
+
+.false.
+
+Description
+
+If .true. apply screening to e-ph matrix elements in TDBE simulations.
+
+Back to Top
+
+<
+Page contents
+
+>
+Page contents:
+
+Inputs for EPW
+
+List of inputs of EPW v6.0
+
+Structure of the input data
+
+&inputepw
+
+a2f
+
+a2f_iso
+
+ahc_nbnd
+
+ahc_nbndskip
+
+ahc_win_max
+
+ahc_win_min
+
+amass(:)
+
+asr_typ
+
+assume_metal
+
+a_gap0
+
+band_plot
+
+bands_skipped
+
+bfieldx,
+ 
+bfieldy,
+ 
+bfieldz
+
+bnd_cum
+
+broyden_beta
+
+broyden_ndim
+
+carrier
+
+calc_nelec_wann
+
+conv_thr_iaxis
+
+conv_thr_racon
+
+conv_thr_raxis
+
+cumulant
+
+degaussq
+
+degaussw
+
+delta_approx
+
+delta_qsmear
+
+delta_smear
+
+dvscf_dir
+
+do_CHBB
+
+efermi_read
+
+eig_read
+
+elecselfen
+
+elecselfen_type
+
+eliashberg
+
+elph
+
+emax_coulomb
+
+emin_coulomb
+
+ep_coupling
+
+epbwrite,
+ 
+epbread
+
+epexst
+
+ephwrite
+
+epmatkqread
+
+eps_acoustic
+
+epsiHEG
+
+eps_cut_ir
+
+epw_memdist
+
+epwread
+
+epwwrite
+
+etf_mem
+
+exciton
+
+explrn
+
+fbw
+
+fermi_diff
+
+fermi_energy
+
+fermi_plot
+
+fila2f
+
+fildvscf
+
+filirobj
+
+filkf
+
+filnscf_coul
+
+filqf
+
+filukk
+
+filukq
+
+fixsym
+
+fsthick
+
+gap_edge
+
+gb_scattering
+
+gb_only
+
+gb_size
+
+griddens
+
+gridsamp
+
+icoulomb
+
+imag_read
+
+int_mob
+
+iterative_bte
+
+iverbosity
+
+ii_g
+
+ii_scattering
+
+ii_only
+
+ii_lscreen
+
+ii_partion
+
+ii_charge
+
+ii_n
+
+ii_eda
+
+kerread
+
+kerwrite
+
+kmaps
+
+lacon
+
+laniso
+
+lifc
+
+limag
+
+lindabs
+
+liso
+
+lpade
+
+lphase
+
+lpolar
+
+lreal
+
+ltrans_crta
+
+lscreen
+
+lunif
+
+lwfpt
+
+longrange
+
+lopt_w2b
+
+loptabs
+
+len_mesh
+
+max_memlt
+
+meff
+
+mob_maxfreq
+
+mob_nfreq
+
+mob_maxiter
+
+mp_mesh_k
+
+mp_mesh_q
+
+meshnum
+
+nbndsub
+
+nbndc_explrn
+
+nbndv_explrn
+
+negnv_explrn
+
+ncarrier
+
+nc
+
+nel
+
+nest_fn
+
+ngaussw
+
+nk1,
+ 
+nk2,
+ 
+nk3
+
+nkf1,
+ 
+nkf2,
+ 
+nqf3
+
+nq1,
+ 
+nq2,
+ 
+nq3
+
+nqf1,
+ 
+nqf2,
+ 
+nqf3
+
+npade
+
+nqsmear
+
+nqstep
+
+n_r
+
+nsiter
+
+nsmear
+
+nstemp
+
+nswi
+
+nswc
+
+nswfc
+
+nq_init
+
+muc
+
+muchem
+
+nw
+
+nw_specfun
+
+omegamax
+
+omegamin
+
+omegastep
+
+outdir
+
+phonselfen
+
+plot_explrn_e
+
+plot_explrn_h
+
+plselfen
+
+positive_matsu
+
+prefix
+
+prtgkk
+
+pwc
+
+QD_bin
+
+QD_min
+
+rand_nq,
+ 
+rand_nk
+
+rand_q,
+ 
+rand_k
+
+restart
+
+restart_filq
+
+restart_step
+
+scr_typ
+
+scatread
+
+scattering
+
+scattering_serta
+
+scattering_0rta
+
+scissor
+
+selecqread
+
+smear_rpa
+
+specfun_el
+
+specfun_ph
+
+specfun_pl
+
+sr_crta
+
+system_2d
+
+shortrange
+
+start_mesh
+
+step_k1_explrn
+
+step_k2_explrn
+
+step_k3_explrn
+
+temps
+
+tc_linear
+
+tc_linear_solver
+
+vme
+
+wannierize
+
+wepexst
+
+wmax
+
+wmax_specfun
+
+wmin
+
+wmin_specfun
+
+wscut
+
+wsfc
+
+auto_projections
+
+dis_froz_min,
+ 
+dis_froz_max
+
+dis_win_min,
+ 
+dis_win_max
+
+iprint
+
+num_iter
+
+proj(:)
+
+reduce_unk
+
+scdm_entanglement
+
+scdm_mu
+
+scdm_proj
+
+scdm_sigma
+
+wannier_plot
+
+wannier_plot_list
+
+wannier_plot_radius
+
+wannier_plot_scale
+
+wannier_plot_supercell
+
+wdata(:)
+
+plrn
+
+type_plrn
+
+init_plrn
+
+init_sigma_plrn
+
+init_k0_plrn
+
+init_ntau_plrn
+
+conv_thr_plrn
+
+niter_plrn
+
+ethrdg_plrn
+
+adapt_ethrdg_plrn
+
+init_ethrdg_plrn
+
+nethrdg_plrn
+
+io_lvl_plrn
+
+restart_plrn
+
+interp_Bqu_plrn
+
+interp_Ank_plrn
+
+cal_psir_plrn
+
+step_wf_grid_plrn
+
+scell_mat_plrn
+
+scell_mat
+
+do_tdbe
+
+dt_tdbe
+
+nt_tdbe
+
+twrite_tdbe
+
+temp_el_tdbe
+
+temp_ph_tdbe
+
+init_type_tdbe
+
+init_sigma_tdbe
+
+solver_tdbe
+
+ef_c_tdbe
+
+ef_v_tdbe
+
+carr_dyn_tdbe
+
+dg_tdbe
+
+nqf1d,
+ 
+nqf2d,
+ 
+nqf3d
+
+nkf1d,
+ 
+nkf2d,
+ 
+nkf3d
+
+dph_tdbe
+
+restart_tdbe
+
+phph_tdbe
+
+phwmin_tdbe
+
+ephmat_dir
+
+lscreen_tdbe
+
+<
+Documentation
+
+Inputs for ZG
+>
+
+ © Copyright .

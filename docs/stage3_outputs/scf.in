@@ -1,0 +1,32 @@
+&CONTROL
+  calculation='scf',
+  prefix='LiF',
+  outdir='tmp/',
+  pseudo_dir='pseudo/',
+  verbosity='high'
+/
+&SYSTEM
+  ibrav=0,
+  nat=2,
+  ntyp=2,
+  ecutwfc=100.0,
+  occupations='fixed'
+/
+&ELECTRONS
+  conv_thr=1.0d-12
+/
+ATOMIC_SPECIES
+  Li 6.94 TODO_LI_PSEUDO
+  F  18.998 TODO_F_PSEUDO
+
+CELL_PARAMETERS angstrom
+  TODO_FILL_CELL_VECTOR_1
+  TODO_FILL_CELL_VECTOR_2
+  TODO_FILL_CELL_VECTOR_3
+
+ATOMIC_POSITIONS crystal
+  TODO_FILL_LI_POSITION
+  TODO_FILL_F_POSITION
+
+K_POINTS automatic
+  8 8 8 0 0 0

@@ -1,0 +1,10 @@
+LiF DFPT starter calculation
+&INPUTPH
+  prefix='LiF',
+  outdir='tmp/',
+  tr2_ph=1.0d-14,
+  ldisp=.true.,
+  nq1=8, nq2=8, nq3=8,
+  fildyn='LiF.dyn',
+  verbosity='high'
+/

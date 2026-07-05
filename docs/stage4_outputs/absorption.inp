@@ -1,0 +1,10 @@
+number_val_bands_fine 3
+number_val_bands_coarse 3
+number_cond_bands_fine 7
+number_cond_bands_coarse 7
+eqp_corrections
+polarization 1 0 0
+energy_resolution 0.10
+gaussian_broadening
+use_wfn_hdf5
+verbosity 1

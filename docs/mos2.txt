@@ -1,6 +1,0 @@
-MoS2 reference note:
-
-- Material: MoS2
-- Recommended toy k-grid: 12x12x1
-- Recommended toy dielectric cutoff: 10 Ry
-- Example executable to start with: epsilon

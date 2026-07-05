@@ -1,73 +1,37 @@
-from pathlib import Path
+import argparse
 
-from langchain.agents import create_agent
-from langchain.tools import tool
-from langchain_core.documents import Document
-from langchain_core.vectorstores import InMemoryVectorStore
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-DOCS_DIR = BASE_DIR / "docs"
+from stage1 import run_stage1_check, run_stage1_fetch
+from stage2 import run_stage2_check, run_stage2_extract
+from stage3 import run_stage3_check, run_stage3_generate
+from stage4 import run_stage4_check, run_stage4_generate
+from stage5 import run_stage5_check, run_stage5_generate
 
 
-@tool
-def add(a: int, b: int) -> int:
-    """Add two integers."""
-    return a + b
+COMMAND_HANDLERS = {
+    "stage1-fetch": run_stage1_fetch,
+    "stage1-check": run_stage1_check,
+    "stage2-extract": run_stage2_extract,
+    "stage2-check": run_stage2_check,
+    "stage3-generate": run_stage3_generate,
+    "stage3-check": run_stage3_check,
+    "stage4-generate": run_stage4_generate,
+    "stage4-check": run_stage4_check,
+    "stage5-generate": run_stage5_generate,
+    "stage5-check": run_stage5_check,
+}
 
 
-def build_vector_store() -> InMemoryVectorStore:
-    documents = []
-    for path in sorted(DOCS_DIR.glob("*.txt")):
-        text = path.read_text(encoding="utf-8")
-        documents.append(Document(page_content=text, metadata={"source": path.name}))
-
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-    vector_store = InMemoryVectorStore(embedding=embeddings)
-    vector_store.add_documents(documents)
-    return vector_store
-
-
-VECTOR_STORE = build_vector_store()
-
-
-@tool
-def retrieve_notes(query: str) -> str:
-    """Retrieve relevant note snippets from the local text files."""
-    docs = VECTOR_STORE.similarity_search(query, k=2)
-    chunks = []
-    for doc in docs:
-        chunks.append(f"source={doc.metadata.get('source', 'unknown')}\n{doc.page_content}")
-    return "\n\n".join(chunks)
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Stage-by-stage retrieval and starter-input pipeline for QE, EPW, and BerkeleyGW."
+    )
+    parser.add_argument("command", choices=sorted(COMMAND_HANDLERS), help="Stage action to run.")
+    return parser.parse_args()
 
 
 def main() -> None:
-    model = ChatOpenAI(model="gpt-4.1-nano", temperature=0)
-    agent = create_agent(
-        model=model,
-        tools=[add, retrieve_notes],
-        system_prompt="Use the retrieval tool for note questions and the add tool for arithmetic.",
-    )
-
-    result = agent.invoke(
-        {
-            "messages": [
-                {
-                    "role": "user",
-                    "content": (
-                        "From the local notes, what toy k-grid and dielectric cutoff are recommended "
-                        "for Silicon? Use the retrieval tool and answer briefly."
-                    ),
-                }
-            ]
-        }
-    )
-
-    for message in result["messages"]:
-        content = getattr(message, "content", None)
-        if isinstance(content, str) and content.strip():
-            print(content)
+    args = parse_args()
+    COMMAND_HANDLERS[args.command]()
 
 
 if __name__ == "__main__":

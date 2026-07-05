@@ -1,0 +1,131 @@
+{
+  "material": {
+    "value": "LiF",
+    "status": "found",
+    "evidence": "first-principles calculations of excitonic polarons for LiF",
+    "notes": "Target material identified directly from the first-principles section."
+  },
+  "study_goal": {
+    "value": "Perform first-principles calculations of excitonic and polaron properties in LiF using Quantum Espresso, EPW, Wannier90, and BerkeleyGW.",
+    "status": "found",
+    "evidence": "The paper details DFT, DFPT, GW/BSE calculations, and electron-phonon coupling in LiF.",
+    "notes": "Main objective of the computational workflow."
+  },
+  "uses_dft": true,
+  "uses_dfpt": true,
+  "uses_epw": true,
+  "uses_gw": true,
+  "uses_bse": true,
+  "dft_code": {
+    "value": "Quantum Espresso",
+    "status": "found",
+    "evidence": "The paper states the use of Quantum Espresso for DFT and DFPT calculations.",
+    "notes": "DFT software employed."
+  },
+  "xc_functional": {
+    "value": "PBE GGA",
+    "status": "found",
+    "evidence": "The paper specifies the use of the PBE generalized-gradient approximation.",
+    "notes": "Exchange-correlation functional used."
+  },
+  "pseudopotentials": {
+    "value": "Norm-conserving pseudopotentials",
+    "status": "found",
+    "evidence": "The paper mentions the employment of norm-conserving pseudopotentials.",
+    "notes": "Type of pseudopotentials used."
+  },
+  "pw_cutoff_ry": {
+    "value": "100 Ry",
+    "status": "found",
+    "evidence": "planewaves kinetic energy cutoff of 100 Ry",
+    "notes": "Plane-wave cutoff parsed directly from the paper."
+  },
+  "scf_conv_thr_ry": {
+    "value": "10^-12 Ry",
+    "status": "found",
+    "evidence": "self-consistent calculations is 10 − 12 superscript 10 12 10^{-12} 10 start_POSTSUPERSCRIPT - 12 end_POSTSUPERSCRIPT Ry",
+    "notes": "SCF threshold parsed directly from the paper."
+  },
+  "dfpt_conv_thr_ry2": {
+    "value": "1e-14 Ry^2",
+    "status": "found",
+    "evidence": "The DFPT convergence threshold is 10^{-14} Ry^2.",
+    "notes": "DFPT convergence threshold."
+  },
+  "epw_code": {
+    "value": "EPW",
+    "status": "found",
+    "evidence": "EPW is used to compute electron-phonon coupling matrix elements.",
+    "notes": "Software used for electron-phonon calculations."
+  },
+  "wannier_code": {
+    "value": "Wannier90",
+    "status": "found",
+    "evidence": "Wannier90 is employed for charge density and displacement pattern visualization.",
+    "notes": "Software used for Wannier functions."
+  },
+  "gw_code": {
+    "value": "BerkeleyGW",
+    "status": "found",
+    "evidence": "BerkeleyGW is used for GW/BSE calculations.",
+    "notes": "GW/BSE computational package."
+  },
+  "dielectric_cutoff_ry": {
+    "value": "10 Ry",
+    "status": "found",
+    "evidence": "dielectric matrix to 10 Ry",
+    "notes": "Dielectric cutoff parsed directly from the paper."
+  },
+  "sigma_valence_bands": {
+    "value": "5",
+    "status": "found",
+    "evidence": "include 5 valence bands and 195 conduction bands. To compute the self-energy",
+    "notes": "Sigma/GW valence band count parsed from the self-energy setup sentence."
+  },
+  "sigma_conduction_bands": {
+    "value": "195",
+    "status": "found",
+    "evidence": "include 5 valence bands and 195 conduction bands. To compute the self-energy",
+    "notes": "Sigma/GW conduction band count parsed from the self-energy setup sentence."
+  },
+  "sigma_self_energy_method": {
+    "value": "COHSEX approximation",
+    "status": "found",
+    "evidence": "The self-energy is computed using the COHSEX approximation.",
+    "notes": "Method for self-energy calculation."
+  },
+  "quasiparticle_gap_ev": {
+    "value": "14.7 eV",
+    "status": "found",
+    "evidence": "band gap of 14.7 eV",
+    "notes": "Quasiparticle gap parsed directly from the paper."
+  },
+  "kernel_valence_bands": {
+    "value": "3",
+    "status": "found",
+    "evidence": "BSE kernel is constructed using 3 valence bands and 7 conduction bands",
+    "notes": "BSE kernel valence band count parsed directly from the paper."
+  },
+  "kernel_conduction_bands": {
+    "value": "7",
+    "status": "found",
+    "evidence": "BSE kernel is constructed using 3 valence bands and 7 conduction bands",
+    "notes": "BSE kernel conduction band count parsed directly from the paper."
+  },
+  "bse_k_grid": {
+    "value": "8×8×8",
+    "status": "found",
+    "evidence": "The excitonic properties are computed on an 8×8×8 Brillouin zone grid.",
+    "notes": "k-point grid for BSE calculations."
+  },
+  "supercell_hint": {
+    "value": "not specified",
+    "status": "missing",
+    "evidence": "",
+    "notes": "No explicit supercell size provided."
+  },
+  "missing_items": [
+    "supercell_hint"
+  ],
+  "overall_notes": "This is a starter workflow summary based on the provided evidence; it does not include a full reproduction package."
+}
