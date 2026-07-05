@@ -1,0 +1,11 @@
+[project]
+name = "agentic-bgw"
+version = "0.1.0"
+description = "Agentic RAG workflow for BerkeleyGW input generation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

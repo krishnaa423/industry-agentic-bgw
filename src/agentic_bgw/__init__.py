@@ -1,0 +1,1 @@
+"""Agentic BerkeleyGW assistant package."""
