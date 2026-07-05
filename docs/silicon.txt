@@ -1,0 +1,6 @@
+Silicon reference note:
+
+- Material: Silicon
+- Recommended toy k-grid: 4x4x4
+- Recommended toy dielectric cutoff: 15 Ry
+- Example executable to start with: sigma

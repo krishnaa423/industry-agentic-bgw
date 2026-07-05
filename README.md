@@ -1,11 +1,15 @@
-# Agentic BerkeleyGW Assistant
+# agentic_bgw
 
-This repository will house an agentic RAG workflow for BerkeleyGW input-file generation.
+This repo is currently testing a simple LangChain RAG workflow.
 
-Planned layout:
+Current setup:
 
-- `src/` for application code
-- `docs/` for generated architecture notes and artifacts
-- `tests/` for validation scripts
+- `src/main.py` builds a tiny in-memory vector store from local text files in `docs/`
+- the agent uses `gpt-4.1-nano`
+- a retrieval tool is used to answer a question from the dummy notes
 
-The first commit establishes the standalone repository and submodule wiring. The implementation layer is added on top of that.
+Run from `src/` with:
+
+```bash
+python main.py
+```

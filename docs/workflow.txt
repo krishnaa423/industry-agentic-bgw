@@ -1,0 +1,5 @@
+BerkeleyGW workflow note:
+
+- Run epsilon before sigma in a standard quasiparticle workflow.
+- Kernel is associated with the BSE stage.
+- Absorption is evaluated after the kernel stage in this toy workflow.
